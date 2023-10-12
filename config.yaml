@@ -1,0 +1,56 @@
+#Polar code params
+H_filename: "./codes/BCH_63_45.alist"
+G_filename: "./codes/BCH_63_45_GM.npy"
+
+# Teacher decoder params
+T_iteration_num: 30
+T_sum_product_type: False
+T_early_stopping: False
+T_load_weights: False
+
+# Student decoder params
+S_sum_product_type: False
+S_iteration_num: 5
+S_early_stopping: False
+S_load_weights: False
+
+# data params
+batch_size: 3600
+val_SNR_start: 1
+val_SNR_end: 8
+val_num_SNR: 1
+noise_seed: 345000
+word_seed: 786000
+test_errors: 100
+
+
+# teacher - student architecture
+alpha: 1
+decoder_type: "FNOMS"
+beta: 0.01
+gamma: 1
+zeta: 0.01
+ppp: 12
+jump_iter: 25
+
+
+
+# nn training
+run_name: 'test-6'
+steps: 50
+all_zeros_codeword_training: False
+all_zeros_codeword_testing: False
+no_sigma_scaling_train: False
+no_sigma_scaling_test: False
+min_frame_errors: 100
+max_frames: 10000000000000000
+
+
+lr: 0.01
+optimizer_type: 'ADAM'
+criterion_type: 'BCE'
+num_of_epochs: 200
+train_minibatch_size: 1000
+SNR_start: 1
+SNR_end: 8
+num_SNR: 8
