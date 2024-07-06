@@ -30,7 +30,7 @@ You can install the required packages using the following command:
 
 ```bash
 pip install torch numpy matplotlib
-
+```
 
 sage
 Clone this repository:
