@@ -7,9 +7,7 @@ This repository contains an implementation of the neural decoding technique desc
 - [Installation](#installation)
 - [Usage](#usage)
 - [Repository Structure](#repository-structure)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -25,50 +23,48 @@ To run the code in this repository, you need to have Python installed along with
 - PyTorch
 - NumPy
 - Matplotlib
+- PyYAML
 
 You can install the required packages using the following command:
 
 ```bash
-pip install torch numpy matplotlib
+pip3 install -r requirements.txt
 ```
 
-sage
+## Usage
 Clone this repository:
 
-bash
-Copy code
+```bash
 git clone https://github.com/YOUR_USERNAME/Neural-Decoding-With-Optimization-of-Node-Activations.git
 cd Neural-Decoding-With-Optimization-of-Node-Activations
-Run the training script:
+```
+Edit the configuration File and run:
+```bash
+python main.py
+```
 
-bash
-Copy code
-python train.py
-Evaluate the model:
+## Repository Structure
 
-bash
-Copy code
-python evaluate.py
-
-
-
+```
 Neural-Decoding-With-Optimization-of-Node-Activations/
 │
-├── data/
-│   ├── train/
-│   └── test/
+├── codes/
+│   ├── alist files
+│   └── npy files
 │
-├── models/
-│   ├── neural_decoder.py
-│   └── ...
+├── Decoder/
+│   ├── decoder.py
 │
+├── Code/  
+│  ├── code.py
 ├── utils/
-│   ├── data_loader.py
+│   ├── config.py
 │   └── ...
 │
-├── train.py
-├── evaluate.py
+├── config.yaml
+├── main.py
 ├── README.md
 └── requirements.txt
+```
 
 
